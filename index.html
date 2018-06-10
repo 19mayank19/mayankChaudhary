@@ -1,0 +1,101 @@
+<!Doctype Html>
+<html>
+<head>
+<title>ABES Registration form</title>
+</head>
+<style>
+p{
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+	}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+<body>
+<pre>
+<strong><p style = " color : brown ; font-family : courier ; font-size : 250%">                  ABES Engineering College          
+                     College Code (032)
+                        <img src="data:image/png;base64,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" alt="abes logo" title="ABES Engineering College">
+                     Registration Form
+</p></strong></pre>
+<form>
+<fieldset>
+<legend title="You have to enter your Personal Details">Personal Details</legend>
+<pre>
+<h2 style="color:green">First Name :  <input type="text" name="First Name">                     Middle Name :   <input type="text" name="Middle Name">                         Last Name: <input type="text" name="Last Name"> </h2>
+<h2 style="color:green">DOB :  <input type="date" name="bday">                              Gender : <input type="radio" name="gender" value="male" checked>Male <input type="radio" name="gender" value="female">Female <input type="radio" name="gender" value="other">other                            E-mail : <input type="email" name="email"></h2>
+<h2 style="color:green">Tel No :  <input type="telephone" name="telephone no">                         Category :  <input type="radio" name="category" value="General" checked>General <input type="radio" name="category" value="OBC">OBC <input type="radio" name="category" value="SC">SC <input type="radio" name="category" value="ST">ST <input type="radio" name="category" value="other">other      
+</pre> 
+</fieldset>
+</form>
+<form>
+<fieldset>
+<legend title="Here you have to enter your address details">Address Details</legend>
+<pre>
+<h2 style="color:purple">Address :  <input type="text" name="address">                        city : <input type="text" name="city">                                 District :  <input type="text" name="district"></h2>
+<h2 style="color:purple">Pin Code :  <input type="text" name="pincode">                       State :  <select name="state"><option value="Andhra Pradesh">Andhra Pradesh</option><option value="Arunachal Pradesh">Arunachal pradesh</option><option value="Assam">Assam</option><option value="Bihar">Bihar</option><option value="Chhattisgarh">Chhattisgarh</option><option value="Goa">Goa</option><option value="Gujarat">Gujarat</option><option value="Haryana">Haryana</option><option value="Himachal Pradesh">Himachal Pradesh</option><option value="Jammu & Kashmir">Jammu & Kashmir</option><option value="Jharkhand">Jharkhand</option><option value="Karnatka">Karnatka</option><option value="Kerela">Kerela</option><option value="Madhya Pradesh">Madhya Pradesh</option><option value="Maharashtra">Maharashtra</option><option value="Manipur">Manipur</option><option value="Meghalya">Meghalya</option><option value="Mizoram">Mizoram</option><option value="Nagaland">Nagaland</option><option value="Odisha">Odisha</option><option value="Punjab">Punjab</option><option value="Rajasthan">Rajasthan</option><option value="Sikkim">Sikkim</option><option value="Tamil Nadu">Tamil Nadu</option><option value="Telengana">Telengana</option><option value="Tripura">Tripura</option><option value="Uttarakhand">Uttarakhand</option><option value="Uttar Pradesh">Uttar Pradesh</option><option value="West Bengal">West Bengal</option><option value="Chandigarh">Chandigarh</option><option value="Dadra & Nagar Haveli">Dadra & Nagar Haveli</option><option value="Daman & Diu">Daman & Diu</option><option value="Delhi">Delhi</option><option value="Lakshadweep">Lakshadweep</option><option value="Puducherry">Puducherry</option><option value="Andaman & Nicobar Islands">Andaman & Nicobar Islands</option></select></h2>
+</pre></fieldset>
+</form>
+<form>
+<fieldset>
+<legend title="Enter your parent's details">Parent's Details</legend>
+<pre>
+<h2 style="color:red">Father's Name :   <input type="text" name="father's name">                Mobile No. :      <input type="telephone" name="mobile no.">                  Occupation :   <input type="text"  name="occupation"></h2>
+<h2 style="color:red">Mother's name :   <input type="text" name="mother's name">                Mobile no. :      <input type="telephone" name="mobile no.">                  Occupation :   <input type="text"  name="occupation"></h2>
+</pre>
+</fieldset>
+</form>
+<form>
+<fieldset>
+<legend title="enter your educational qualifications">Educational Details's</legend>
+<pre>
+<h1 style="color:orange">!0th Details</h1><br>
+<h2 style="color:blue">Roll No. :     <input type="text" name="rollno.">                     Passing yr. :    <select name="year"><option value="2010">2010</option><option value="2011">2011</option><option value="2012">2012</option><option value="2013">2013</option><option value="2014">2014</option><option value="2015">2015</option><option value="2016">2016</option><option value="2017">2017</option><option value="2018">2018</option></select>                     School Name :    <input type="text" name="school name">
+<h2 style="color:blue">Board :      <select name="board"><option value="CBSE">CBSE</option><option value="ICSE">ICSE</option><option value="other">other</option></select>                                Overall Percentage :       <input type="number" name="points" min="0" max="100" step="1" value="80"> </h2>
+<br>
+<h1 style="color:orange">!2th Details</h1><br>
+          <h2 style="color:blue">Roll No. :     <input type="text" name="rollno.">                     Passing yr. :    <select name="year"><option value="2010">2010</option><option value="2011">2011</option><option value="2012">2012</option><option value="2013">2013</option><option value="2014">2014</option><option value="2015">2015</option><option value="2016">2016</option><option value="2017">2017</option><option value="2018">2018</option></select>                     School Name :    <input type="text" name="school name">
+<h2 style="color:blue">Board :      <select name="board"><option value="CBSE">CBSE</option><option value="ICSE">ICSE</option><option value="other">other</option></select>                                Overall Percentage :       <input type="number" name="points" min="0" max="100" step="1" value="80"> </h2>
+<br>
+</pre>
+</legend>
+</form>
+<button class="button" style="vertical-align:middle" onclick="alert('Thank you for filling the form for ABES College and now your filled data is safe at ABES server made by Mayank Chaudhary')"><span>Submit </span></button>          
+</body></html>
